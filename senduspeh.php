@@ -212,7 +212,7 @@ include_once('../prais.php');
 					<div class="es2_oknatseny__zag">НАША КОМПАНИЯ</div>
 					<div class="es2_oknatseny_tsena">
 						<div class="es2_oknatseny_left">Цена окна</div>
-						<div class="es2_oknatseny_right es2_red">198 <span>р.</span></div>
+						<div class="es2_oknatseny_right es2_red"><?php echo $cena_okna; ?> <span>р.</span></div>
 					</div>
 					
 										
@@ -222,7 +222,7 @@ include_once('../prais.php');
 								<td>Цена установки</td>
 							</tr>
 						</table></div>
-						<div class="es2_oknatseny_row_right es2_red">60 <span>р.</span></div>
+						<div class="es2_oknatseny_row_right es2_red"><?php echo $cena_ustanovki; ?> <span>р.</span></div>
 					</div>
 					
 					<div class="es2_oknatseny_row">
@@ -277,11 +277,11 @@ include_once('../prais.php');
 						<div class="es2_okna slide">
 							<div class="es2_okna__zag">Дилеры по окнам</div>
 							<div class="es2_okna_tsena">
-								<div class="es2_okna_right es2_red">250 <span>р.</span></div>
+								<div class="es2_okna_right es2_red"><?php echo $cena_okna_dileri; ?> <span>р.</span></div>
 							</div>
 														
 							<div class="es2_okna_row">
-								<div class="es2_okna_row_right es2_red">99 <span>р.</span></div>
+								<div class="es2_oknatseny_row_right es2_red"><?php echo $cena_ustanovki_dileri; ?> <span>р.</span></div>
 							</div>
 							
 							<div class="es2_okna_row">
@@ -308,11 +308,11 @@ include_once('../prais.php');
 						<div class="es2_okna slide">
 							<div class="es2_okna__zag">Перекупщики</div>
 							<div class="es2_okna_tsena">
-								<div class="es2_okna_right es2_red">280 <span>р.</span></div>
+								<div class="es2_okna_right es2_red"><?php echo $cena_okna_perekup; ?> <span>р.</span></div>
 							</div>
 														
 							<div class="es2_okna_row">
-								<div class="es2_okna_row_right es2_red">120 <span>р.</span></div>
+								<div class="es2_oknatseny_row_right es2_red"><?php echo $cena_ustanovki_perekup; ?> <span>р.</span></div>
 							</div>
 							
 							<div class="es2_okna_row">
@@ -340,11 +340,11 @@ include_once('../prais.php');
 						<div class="es2_okna slide">
 							<div class="es2_okna__zag">Частные мастера</div>
 							<div class="es2_okna_tsena">
-								<div class="es2_okna_right es2_red">300 <span>р.</span></div>
+								<div class="es2_okna_right es2_red"><?php echo $cena_okna_chasn; ?> <span>р.</span></div>
 							</div>
 														
 							<div class="es2_okna_row">
-								<div class="es2_okna_row_right es2_red">99 <span>р.</span></div>
+								<div class="es2_oknatseny_row_right es2_red"><?php echo $cena_ustanovki_dileri; ?> <span>р.</span></div>
 							</div>
 							
 							<div class="es2_okna_row">
@@ -371,11 +371,11 @@ include_once('../prais.php');
 						<div class="es2_okna slide">
 							<div class="es2_okna__zag">МЕГА БРЕНДЫ</div>
 							<div class="es2_okna_tsena">
-								<div class="es2_okna_right es2_red">350 <span>р.</span></div>
+								<div class="es2_okna_right es2_red"><?php echo $cena_okna_mego; ?> <span>р.</span></div>
 							</div>
 														
 							<div class="es2_okna_row">
-								<div class="es2_okna_row_right es2_red">150 <span>р.</span></div>
+								<div class="es2_oknatseny_row_right es2_red"><?php echo $cena_ustanovki_mego; ?> <span>р.</span></div>
 							</div>
 							
 							<div class="es2_okna_row">
@@ -418,7 +418,7 @@ include_once('../prais.php');
 		<div class="es13_14">
 			<div class="container">
 				
-				<div class="es13_14__zag">Компания "Окна ПВХ Минск" 100% дешевле!</nobr></div>
+				<div class="es13_14__zag">Компания "Окна ПВХ Минск" 100% дешевле!</div>
 				
 				<div class="row">
 					

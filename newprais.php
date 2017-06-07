@@ -27,7 +27,24 @@ $array3=file( $file3 ); //файл в котором надо изменить �
 $array3[3]=$data3; //строка в которой нужно изменить значение $data
 file_put_contents( $file3, $array3 );}
 
+$data_cena_okna = htmlspecialchars($_POST['data_cena_okna'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$data_cena_okna)) { }
+else {
+$data4 = '$cena_okna = '.$data_cena_okna.';' . "\n";//В виндовс не \n, а \r\n
+$file4 = 'prais.php';
+$array4=file( $file4 ); //файл в котором надо изменить строку
+$array4[4]=$data4; //строка в которой нужно изменить значение $data
+file_put_contents( $file4, $array4 );}
 
+
+$data_cena_ustanovki = htmlspecialchars($_POST['data_cena_ustanovki'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$data_cena_ustanovki)) { }
+else {
+$data5 = '$cena_ustanovki = '.$data_cena_ustanovki.';' . "\n";//В виндовс не \n, а \r\n
+$file5 = 'prais.php';
+$array5=file( $file5 ); //файл в котором надо изменить строку
+$array5[5]=$data5; //строка в которой нужно изменить значение $data
+file_put_contents( $file5, $array5 );}
 
 
 
