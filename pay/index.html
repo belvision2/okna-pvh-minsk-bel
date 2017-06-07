@@ -1,4 +1,8 @@
 
+<?php include("../password_protect.php"); ?>
+<?php 
+include_once('../prais.php'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
   
@@ -51,10 +55,10 @@
 			  	<div class="top_block__logo"><a href="../index.html"><img src="../img/logo.png" alt="" class=""></a></div>
 		  	</div>
 		  	<div class="col-md-4 col-sm-4">
-			  						<a style="text-decoration:none;" class="black" href="tel:+375 29 699-42-60"><div class="top_block__tel comagic_phone velcom" style="margin-top: 20px;">+375 29 699-42-60</div></a>
-			<a style="text-decoration:none;" class="black" href="tel:+375 29 642-42-60"><div class="top_block__tel comagic_phone home" style="margin-top: 0px;">+375 29 642-42-60</div></a>		  	</div>
+			  						<a style="text-decoration:none;" class="black" href="tel:<?php echo $tell_velcom1; ?>"><div class="top_block__tel comagic_phone velcom" style="margin-top: 20px;"><?php echo $tell_velcom1; ?></div></a>
+			<a style="text-decoration:none;" class="black" href="tel:<?php echo $tell_velcom2; ?>"><div class="top_block__tel comagic_phone home" style="margin-top: 0px;"><?php echo $tell_velcom2; ?></div></a>		  	</div>
 		  	<div class="col-md-4 col-sm-4">
-			  	<a style="text-decoration:none;" class="black" href="tel:+375 29 884-88-94"><div class="top_block__tel comagic_phone mts">+375 29 884-88-94</div></a>
+			  	<a style="text-decoration:none;" class="black" href="tel:<?php echo $tell_mts; ?>"><div class="top_block__tel comagic_phone mts"><?php echo $tell_mts; ?></div></a>
 			  	<div class="top_block__vamperez" data-toggle="modal" data-target="#kupitDeshevle"><span>Вам перезвонить?</span></div>
 		  	</div>
 	  	</div>

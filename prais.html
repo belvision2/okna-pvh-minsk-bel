@@ -3,8 +3,6 @@
 include_once('prais.php'); 
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
   
@@ -78,27 +76,36 @@ include_once('prais.php');
 </div>
 <div class="b-card__item">
 <form  action="newprais.php" method="POST" >
-    <div class="b-sms_input b-sms_input_tel"><input type="text" placeholder="Новый телефон" name="data_tell_velcom1" value="" size="0" /></div>
-    <div class="b-sms_but"><input type="submit"   value="сохранить"  /></div>
+<input type="text" placeholder="Новый телефон" name="data_tell_velcom1" value="" size="0" />
+  <input type="submit"   value="сохранить"  />
 </form> 
 </div>
-  <br />      
+  <br /> 
         
-<div class="row">
-					
-					<div class="col-md-6 col-sm-12">
-						<div class="es13_input"><input type="text" placeholder="Новый телефон" name="data_tell_velcom1" value="" size="0" /></div>
-					</div>
-					
-					<div class="col-md-6 col-sm-12 es13_but_div">
+        <div class="b-card__item">
+<div > Телефон Велком 2 - <?php echo $tell_velcom2; ?> </div>
+</div>
+<div class="b-card__item">
+<form  action="newprais.php" method="POST" >
+<input type="text" placeholder="Новый телефон" name="data_tell_velcom2" value="" size="0" />
+  <input type="submit"   value="сохранить"  />
+</form> 
+</div>
+  <br />
+        
+        
+                <div class="b-card__item">
+<div > Телефон МТС - <?php echo $tell_mts; ?> </div>
+</div>
+<div class="b-card__item">
+<form  action="newprais.php" method="POST" >
+<input type="text" placeholder="Новый телефон" name="data_tell_mts" value="" size="0" />
+  <input type="submit"   value="сохранить"  />
+</form> 
+</div>
+  <br />
+        
 
-<input type="submit"   value="сохранить"  />
-
-
-						
-					</div>
-					
-				</div>
 
         
         
