@@ -84,5 +84,163 @@ $array9[9]=$data9; //строка в которой нужно изменить 
 file_put_contents( $file9, $array9 );}
 
 
-header("Location: prais.html");
+$podokonniki = htmlspecialchars($_POST['podokonniki'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$podokonniki)) { }
+else {
+$data10 = '$podokonniki = '.$podokonniki.';' . "\n";//В виндовс не \n, а \r\n
+$file10 = 'prais.php';
+$array10=file( $file10 ); //файл в котором надо изменить строку
+$array10[10]=$data10; //строка в которой нужно изменить значение $data
+file_put_contents( $file10, $array10 );}
+
+
+
+$otkosi = htmlspecialchars($_POST['otkosi'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$otkosi)) { }
+else {
+$data11 = '$otkosi = '.$otkosi.';' . "\n";//В виндовс не \n, а \r\n
+$file11 = 'prais.php';
+$array11=file( $file11 ); //файл в котором надо изменить строку
+$array11[11]=$data11; //строка в которой нужно изменить значение $data
+file_put_contents( $file11, $array11 );}
+
+
+$setki = htmlspecialchars($_POST['setki'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$setki)) { }
+else {
+$data12 = '$setki = '.$setki.';' . "\n";//В виндовс не \n, а \r\n
+$file12 = 'prais.php';
+$array12=file( $file12 ); //файл в котором надо изменить строку
+$array12[12]=$data12; //строка в которой нужно изменить значение $data
+file_put_contents( $file12, $array12 );}
+
+$otlivi = htmlspecialchars($_POST['otlivi'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$otlivi)) { }
+else {
+$data13 = '$otlivi = '.$otlivi.';' . "\n";//В виндовс не \n, а \r\n
+$file13 = 'prais.php';
+$array13=file( $file13 ); //файл в котором надо изменить строку
+$array13[13]=$data13; //строка в которой нужно изменить значение $data
+file_put_contents( $file13, $array13 );}
+
+
+$kbe = htmlspecialchars($_POST['kbe'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$kbe)) { }
+else {
+$data14 = '$kbe = '.$kbe.';' . "\n";//В виндовс не \n, а \r\n
+$file14 = 'prais.php';
+$array14=file( $file14 ); //файл в котором надо изменить строку
+$array14[14]=$data14; //строка в которой нужно изменить значение $data
+file_put_contents( $file14, $array14 );}
+
+$rehau = htmlspecialchars($_POST['rehau'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$rehau)) { }
+else {
+$data15 = '$rehau = '.$rehau.';' . "\n";//В виндовс не \n, а \r\n
+$file15 = 'prais.php';
+$array15=file( $file15 ); //файл в котором надо изменить строку
+$array15[15]=$data15; //строка в которой нужно изменить значение $data
+file_put_contents( $file15, $array15 );}
+
+$salamander = htmlspecialchars($_POST['salamander'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$salamander)) { }
+else {
+$data16 = '$salamander = '.$salamander.';' . "\n";//В виндовс не \n, а \r\n
+$file16 = 'prais.php';
+$array16=file( $file16 ); //файл в котором надо изменить строку
+$array16[16]=$data16; //строка в которой нужно изменить значение $data
+file_put_contents( $file16, $array16 );}
+
+$dexen = htmlspecialchars($_POST['dexen'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$dexen)) { }
+else {
+$data17 = '$dexen = '.$dexen.';' . "\n";//В виндовс не \n, а \r\n
+$file17 = 'prais.php';
+$array17=file( $file17 ); //файл в котором надо изменить строку
+$array17[17]=$data17; //строка в которой нужно изменить значение $data
+file_put_contents( $file17, $array17 );}
+
+$envin = htmlspecialchars($_POST['envin'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$envin)) { }
+else {
+$data18 = '$envin = '.$envin.';' . "\n";//В виндовс не \n, а \r\n
+$file18 = 'prais.php';
+$array18=file( $file18 ); //файл в котором надо изменить строку
+$array18[18]=$data18; //строка в которой нужно изменить значение $data
+file_put_contents( $file18, $array18 );}
+
+$brusbox = htmlspecialchars($_POST['brusbox'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$brusbox)) { }
+else {
+$data19 = '$brusbox = '.$brusbox.';' . "\n";//В виндовс не \n, а \r\n
+$file19 = 'prais.php';
+$array19=file( $file19 ); //файл в котором надо изменить строку
+$array19[19]=$data19; //строка в которой нужно изменить значение $data
+file_put_contents( $file19, $array19 );}
+
+
+$o1 = htmlspecialchars($_POST['o1'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$o1)) { }
+else {
+$data20 = '$o1 = '.$o1.';' . "\n";//В виндовс не \n, а \r\n
+$file20 = 'prais.php';
+$array20=file( $file20 ); //файл в котором надо изменить строку
+$array20[20]=$data20; //строка в которой нужно изменить значение $data
+file_put_contents( $file20, $array20 );}
+
+$o2 = htmlspecialchars($_POST['o2'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$o2)) { }
+else {
+$data21 = '$o2 = '.$o2.';' . "\n";//В виндовс не \n, а \r\n
+$file21 = 'prais.php';
+$array21=file( $file21 ); //файл в котором надо изменить строку
+$array21[21]=$data21; //строка в которой нужно изменить значение $data
+file_put_contents( $file21, $array21 );}
+
+$o3 = htmlspecialchars($_POST['o3'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$o3)) { }
+else {
+$data22 = '$o3 = '.$o3.';' . "\n";//В виндовс не \n, а \r\n
+$file22 = 'prais.php';
+$array22=file( $file22 ); //файл в котором надо изменить строку
+$array22[22]=$data22; //строка в которой нужно изменить значение $data
+file_put_contents( $file22, $array22 );}
+
+$o4 = htmlspecialchars($_POST['o4'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$o4)) { }
+else {
+$data23 = '$o4 = '.$o4.';' . "\n";//В виндовс не \n, а \r\n
+$file23 = 'prais.php';
+$array23=file( $file23 ); //файл в котором надо изменить строку
+$array23[23]=$data23; //строка в которой нужно изменить значение $data
+file_put_contents( $file23, $array23 );}
+
+$o5 = htmlspecialchars($_POST['o5'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$o5)) { }
+else {
+$data24 = '$o5 = '.$o5.';' . "\n";//В виндовс не \n, а \r\n
+$file24 = 'prais.php';
+$array24=file( $file24 ); //файл в котором надо изменить строку
+$array24[24]=$data24; //строка в которой нужно изменить значение $data
+file_put_contents( $file24, $array24 );}
+
+$o6 = htmlspecialchars($_POST['o6'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$o6)) { }
+else {
+$data25 = '$o6 = '.$o6.';' . "\n";//В виндовс не \n, а \r\n
+$file25 = 'prais.php';
+$array25=file( $file25 ); //файл в котором надо изменить строку
+$array25[25]=$data25; //строка в которой нужно изменить значение $data
+file_put_contents( $file25, $array25 );}
+
+$o7 = htmlspecialchars($_POST['o7'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$o7)) { }
+else {
+$data26 = '$o7 = '.$o7.';' . "\n";//В виндовс не \n, а \r\n
+$file26 = 'prais.php';
+$array26=file( $file26 ); //файл в котором надо изменить строку
+$array26[26]=$data26; //строка в которой нужно изменить значение $data
+file_put_contents( $file26, $array26 );}
+
+header("Location: index.html");
 ?>

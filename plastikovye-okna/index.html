@@ -598,28 +598,28 @@ include_once('../prais/prais.php');
 						<div class="item" id="bx_651765591_39">
 							<img src="../upload/iblock/701/701f7a9e89382175122f901bd451d8f4.jpg" alt="Подоконники"/>
 							<div class="blueblock">Подоконники</div>
-							<div class="es6_cost">19 рублей</div>							
+							<div class="es6_cost"><?php echo $podokonniki; ?> рублей</div>							
 						</div>	
 								
 			
 						<div class="item" id="bx_651765591_40">
 							<img src="../upload/iblock/7b1/7b1f9514a545c55485587543c3aa6359.jpg" alt="Откосы"/>
 							<div class="blueblock">Откосы</div>
-							<div class="es6_cost">60 рублей</div>							
+							<div class="es6_cost"><?php echo $otkosi; ?> рублей</div>							
 						</div>	
 								
 			
 						<div class="item" id="bx_651765591_41">
 							<img src="../upload/iblock/806/8066d805715f9038fea8e97fb19aa9be.jpg" alt="Сетки на окна"/>
 							<div class="blueblock">Сетки на окна</div>
-							<div class="es6_cost">20 рублей</div>							
+							<div class="es6_cost"><?php echo $setki; ?> рублей</div>							
 						</div>	
 								
 			
 						<div class="item" id="bx_651765591_42">
 							<img src="../upload/iblock/37b/37b0f24ec8fcf3e26f75d9d3e3b7e4e9.jpg" alt="Отливы"/>
 							<div class="blueblock">Отливы</div>
-							<div class="es6_cost">17 рублей</div>							
+							<div class="es6_cost"><?php echo $otlivi; ?> рублей</div>							
 						</div>	
 								
 				
@@ -788,7 +788,7 @@ include_once('../prais/prais.php');
 																																																
 							</div>
 							<div class="es11_text">стоимость за 1 м<sup>2</sup></div>
-							<div class="es11_stoim">127 р.</div>
+							<div class="es11_stoim"><?php echo $kbe; ?> р.</div>
 						</div>	
 
 
@@ -805,7 +805,7 @@ include_once('../prais/prais.php');
 																																								
 							</div>
 							<div class="es11_text">стоимость за 1 м<sup>2</sup></div>
-							<div class="es11_stoim">138 р.</div>
+							<div class="es11_stoim"><?php echo $rehau; ?> р.</div>
 						</div>	
 															
 			<div class="item" id="bx_1373509569_60">
@@ -820,7 +820,7 @@ include_once('../prais/prais.php');
 																																																
 							</div>
 							<div class="es11_text">стоимость за 1 м<sup>2</sup></div>
-							<div class="es11_stoim">147 р.</div>
+							<div class="es11_stoim"><?php echo $salamander; ?> р.</div>
 						</div>	
 				
 															
@@ -835,7 +835,7 @@ include_once('../prais/prais.php');
 									<img src="../img/es11_star.png" alt="" />																							
 							</div>
 							<div class="es11_text">стоимость за 1 м<sup>2</sup></div>
-							<div class="es11_stoim">126 р.</div>
+							<div class="es11_stoim"><?php echo $dexen; ?> р.</div>
 						</div>	
 															
 	
@@ -850,7 +850,7 @@ include_once('../prais/prais.php');
 																																								
 							</div>
 							<div class="es11_text">стоимость за 1 м<sup>2</sup></div>
-							<div class="es11_stoim">124 р.</div>
+							<div class="es11_stoim"><?php echo $envin; ?> р.</div>
 						</div>	
 															
 	
@@ -864,11 +864,11 @@ include_once('../prais/prais.php');
 																																
 							</div>
 							<div class="es11_text">стоимость за 1 м<sup>2</sup></div>
-							<div class="es11_stoim">119 р.</div>
+							<div class="es11_stoim"><?php echo $brusbox; ?> р.</div>
 						</div>	
 															
 	
-						<div class="item" id="bx_1373509569_61">
+						<!--<div class="item" id="bx_1373509569_61">
 							<div class="es11_img"><img src="../upload/iblock/30f/30f719d8c08454f2c6e59f80dcb9abc9.jpg" alt="SCHUCO" /></div>
 							<div class="es11_name">SCHUCO</div>
 							<div class="es11_star">
@@ -912,7 +912,7 @@ include_once('../prais/prais.php');
 							</div>
 							<div class="es11_text">стоимость за 1 м<sup>2</sup></div>
 							<div class="es11_stoim">122 р.</div>
-						</div>	
+						</div>-->	
 											
 
 					</div>
@@ -1265,7 +1265,7 @@ include_once('../prais/prais.php');
 	
                     <li title="/upload/iblock/626/626b802c633d4444126be27f2b217338.jpg" >
                     		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Ламинированные окна. Цена: <span>690 р.</span></li>
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Ламинированные окна. Цена: <span><?php echo $o7; ?> р.</span></li>
                         </ul>
                     </li>
                     
@@ -1276,7 +1276,7 @@ include_once('../prais/prais.php');
 	
                     <li title="/upload/iblock/29c/29c85b8835f4fa9f01e79ba6f64d9027.jpg" >
                     		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Окно с витражами. Цена: <span>390 р.</span></li>
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Окно с витражами. Цена: <span><?php echo $o1; ?> р.</span></li>
                         </ul>
                     </li>
                     
@@ -1287,7 +1287,7 @@ include_once('../prais/prais.php');
 	
                     <li title="/upload/iblock/190/190495aa9a2de2241faef085d9c0ea73.jpg" >
                     		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Пластиковое окно в комнате. Цена: <span>345 р.</span></li>
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Пластиковое окно в комнате. Цена: <span><?php echo $o2; ?> р.</span></li>
                         </ul>
                     </li>
                     
@@ -1298,7 +1298,7 @@ include_once('../prais/prais.php');
 	
                     <li title="/upload/iblock/59e/59eb7088aa8f2c35ec0ceb3917160bd6.jpg" >
                     		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Окна в доме П-44Т. Цена: <span>579 р.</span></li>
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Окна в доме П-44Т. Цена: <span><?php echo $o3; ?> р.</span></li>
                         </ul>
                     </li>
                     
@@ -1309,7 +1309,7 @@ include_once('../prais/prais.php');
 	
                     <li title="/upload/iblock/5da/5daf814cd65f6f7f72233e08775ba2ae.jpg" >
                     		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">ПВХ окно в комнате. Цена: <span>285 р.</span></li>
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">ПВХ окно в комнате. Цена: <span><?php echo $o4; ?> р.</span></li>
                         </ul>
                     </li>
                     
@@ -1320,7 +1320,7 @@ include_once('../prais/prais.php');
 	
                     <li title="/upload/iblock/e01/e0178fa63737be7bb2af085417e82441.jpg" >
                     		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Ламинированная лоджия 4 м. Цена: <span>820 р.</span></li>
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Ламинированная лоджия 4 м. Цена: <span><?php echo $o5; ?> р.</span></li>
                         </ul>
                     </li>
                     
@@ -1331,7 +1331,7 @@ include_once('../prais/prais.php');
 	
                     <li title="/upload/iblock/a0b/a0b2e7d22b74f6d8a76b02901fafe64c.jpg" >
                     		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Остекление лоджии ПВХ окнами. Цена: <span>1050 р.</span></li>
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Остекление лоджии ПВХ окнами. Цена: <span><?php echo $o6; ?> р.</span></li>
                         </ul>
                     </li>
                     
