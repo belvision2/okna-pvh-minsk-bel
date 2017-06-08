@@ -47,6 +47,42 @@ $array5[5]=$data5; //строка в которой нужно изменить 
 file_put_contents( $file5, $array5 );}
 
 
+$cena_shapka = htmlspecialchars($_POST['cena_shapka'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$cena_shapka)) { }
+else {
+$data6 = '$cena_shapka = '.$cena_shapka.';' . "\n";//В виндовс не \n, а \r\n
+$file6 = 'prais.php';
+$array6=file( $file6 ); //файл в котором надо изменить строку
+$array6[6]=$data6; //строка в которой нужно изменить значение $data
+file_put_contents( $file6, $array6 );}
+
+$dvuxstvorchatoe = htmlspecialchars($_POST['dvuxstvorchatoe'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$dvuxstvorchatoe)) { }
+else {
+$data7 = '$dvuxstvorchatoe = '.$dvuxstvorchatoe.';' . "\n";//В виндовс не \n, а \r\n
+$file7 = 'prais.php';
+$array7=file( $file7 ); //файл в котором надо изменить строку
+$array7[7]=$data7; //строка в которой нужно изменить значение $data
+file_put_contents( $file7, $array7 );}
+
+$trexstvorchatoe = htmlspecialchars($_POST['trexstvorchatoe'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$trexstvorchatoe)) { }
+else {
+$data8 = '$trexstvorchatoe = '.$trexstvorchatoe.';' . "\n";//В виндовс не \n, а \r\n
+$file8 = 'prais.php';
+$array8=file( $file8 ); //файл в котором надо изменить строку
+$array8[8]=$data8; //строка в которой нужно изменить значение $data
+file_put_contents( $file8, $array8 );}
+
+$balkon_blok = htmlspecialchars($_POST['balkon_blok'], NULL, 'utf-8');
+if(!preg_match("/^[0-9]{2,4}$/",$balkon_blok)) { }
+else {
+$data9 = '$balkon_blok = '.$balkon_blok.';' . "\n";//В виндовс не \n, а \r\n
+$file9 = 'prais.php';
+$array9=file( $file9 ); //файл в котором надо изменить строку
+$array9[9]=$data9; //строка в которой нужно изменить значение $data
+file_put_contents( $file9, $array9 );}
+
 
 header("Location: prais.html");
 ?>

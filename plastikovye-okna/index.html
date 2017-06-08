@@ -1,7 +1,7 @@
 
-<?php include("../password_protect.php"); ?>
+<?php include("../prais/password_protect.php"); ?>
 <?php 
-include_once('../prais.php'); 
+include_once('../prais/prais.php'); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -168,7 +168,7 @@ include_once('../prais.php');
 			  <div class="es1_bg__right_col">
 				  <div class="es1_bg__right_col__zag90 hidden-xs">ОКНА</div>
 					<div class="es1_bg__right_col__zag70 hidden-xs">всего ЗА</div>
-					<div class="es1_bg__right_col__stoim hidden-xs">198<span> Р</span></div>
+					<div class="es1_bg__right_col__stoim hidden-xs"><?php echo $cena_shapka; ?><span> Р</span></div>
 					<a href="../plastikovye-okna-kalkulyator/index.html" class="rasschitatlink"><div class="rasschitat">Рассчитать
 						<div>по самой низкой цене</div>
 					</div></a><!-- /.rasschitat -->
@@ -193,7 +193,6 @@ include_once('../prais.php');
 Лучшие цены на окна в Минске<br /><span class="es2_zag2">(глухая+створка)</span></div>
 			
 			<div class="es2_block">
-				
 				
 				
 				
@@ -270,7 +269,7 @@ include_once('../prais.php');
 							</div>
 														
 							<div class="es2_okna_row">
-								<div class="es2_oknatseny_row_right es2_red"><?php echo $cena_ustanovki_dileri; ?> <span>р.</span></div>
+								<div class="es2_okna_row_right es2_red"><?php echo $cena_ustanovki_dileri; ?> <span>р.</span></div>
 							</div>
 							
 							<div class="es2_okna_row">
@@ -301,7 +300,7 @@ include_once('../prais.php');
 							</div>
 														
 							<div class="es2_okna_row">
-								<div class="es2_oknatseny_row_right es2_red"><?php echo $cena_ustanovki_perekup; ?> <span>р.</span></div>
+								<div class="es2_okna_row_right es2_red"><?php echo $cena_ustanovki_perekup; ?> <span>р.</span></div>
 							</div>
 							
 							<div class="es2_okna_row">
@@ -333,7 +332,7 @@ include_once('../prais.php');
 							</div>
 														
 							<div class="es2_okna_row">
-								<div class="es2_oknatseny_row_right es2_red"><?php echo $cena_ustanovki_dileri; ?> <span>р.</span></div>
+								<div class="es2_okna_row_right es2_red"><?php echo $cena_ustanovki_chasn; ?> <span>р.</span></div>
 							</div>
 							
 							<div class="es2_okna_row">
@@ -364,7 +363,7 @@ include_once('../prais.php');
 							</div>
 														
 							<div class="es2_okna_row">
-								<div class="es2_oknatseny_row_right es2_red"><?php echo $cena_ustanovki_mego; ?> <span>р.</span></div>
+								<div class="es2_okna_row_right es2_red"><?php echo $cena_ustanovki_mego; ?> <span>р.</span></div>
 							</div>
 							
 							<div class="es2_okna_row">
@@ -441,9 +440,9 @@ include_once('../prais.php');
 						<img src="../img/es3_ok1.png" alt="" />
 						<div class="es3_bageout"><div class="es3_bage">
 							<span class="es3_vashek">Ваша экономия</span><br>
-							<span class="es3_econom">101 <span>р.</span></span>
+							<span class="es3_econom"><?php echo $dvuxstvorchatoe_ekonomiya; ?> <span>р.</span></span>
 						</div></div>
-						<div class="es3_tsena">198 <span>рублей</span></div>
+						<div class="es3_tsena"><?php echo $dvuxstvorchatoe; ?> <span>рублей</span></div>
 					</div>
 					
 					<div class="es3_ok2">
@@ -452,9 +451,9 @@ include_once('../prais.php');
 						<img src="../img/es3_ok2.png" alt="" style="margin-top:-14px;" />
 						<div class="es3_bageout"><div class="es3_bage">
 							<span class="es3_vashek">Ваша экономия</span><br>
-							<span class="es3_econom">130 <span>р.</span></span>
+							<span class="es3_econom"><?php echo $trexstvorchatoe_ekonomiya; ?> <span>р.</span></span>
 						</div></div>
-						<div class="es3_tsena">288 <span>рублей</span></div>
+						<div class="es3_tsena"><?php echo $trexstvorchatoe; ?> <span>рублей</span></div>
 					</div>
 					
 					<div class="es3_ok3">
@@ -463,9 +462,9 @@ include_once('../prais.php');
 						<img src="../img/es3_ok3.png" alt="" />
 						<div class="es3_bageout" style="margin-top:-92px;"><div class="es3_bage">
 							<span class="es3_vashek">Ваша экономия</span><br>
-							<span class="es3_econom">135 <span>р.</span></span>
+							<span class="es3_econom"><?php echo $balkon_blok_ekonomiya; ?> <span>р.</span></span>
 						</div></div>
-						<div class="es3_tsena">299 <span>рублей</span></div>
+						<div class="es3_tsena"><?php echo $balkon_blok; ?> <span>рублей</span></div>
 
 					</div>
 					

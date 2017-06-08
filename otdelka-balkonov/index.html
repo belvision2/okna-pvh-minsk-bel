@@ -1,7 +1,7 @@
 
-<?php include("../password_protect.php"); ?>
+<?php include("../prais/password_protect.php"); ?>
 <?php 
-include_once('../prais.php'); 
+include_once('../prais/prais.php'); 
 ?>
 <!DOCTYPE html>
 <html lang="en">

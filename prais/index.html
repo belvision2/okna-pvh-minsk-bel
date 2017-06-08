@@ -130,12 +130,52 @@ include_once('prais.php');
   <input type="submit"   value="сохранить"  />
 </form> 
 </div>
+  <br />
+        
+<div class="b-card__item">
+Цена в шапке страницы (пластиковые окна) - <?php echo $cena_shapka; ?>
+</div>
+<div class="b-card__item">
+<form  action="newprais.php" method="POST" >
+<input type="text" placeholder="Новая цена" name="cena_shapka" value="" size="0" />
+  <input type="submit"   value="сохранить"  />
+</form> 
+</div>
   <br />        
-        
 
-
-        
-        
+<div class="b-card__item">
+Купите окна по старой цене (пластиковые окна)
+</div>
+ <div class="b-card__item">
+двухстворчатое - <?php echo $dvuxstvorchatoe; ?>
+</div>
+<div class="b-card__item">
+<form  action="newprais.php" method="POST" >
+<input type="text" placeholder="Новая цена" name="dvuxstvorchatoe" value="" size="0" />
+  <input type="submit"   value="сохранить"  />
+</form> 
+</div>
+  <br />       
+  <div class="b-card__item">
+трехстворчатое - <?php echo $trexstvorchatoe; ?>
+</div>
+<div class="b-card__item">
+<form  action="newprais.php" method="POST" >
+<input type="text" placeholder="Новая цена" name="trexstvorchatoe" value="" size="0" />
+  <input type="submit"   value="сохранить"  />
+</form> 
+</div>
+  <br />
+  <div class="b-card__item">
+балконный блок - <?php echo $balkon_blok; ?>
+</div>
+<div class="b-card__item">
+<form  action="newprais.php" method="POST" >
+<input type="text" placeholder="Новая цена" name="balkon_blok" value="" size="0" />
+  <input type="submit"   value="сохранить"  />
+</form> 
+</div>
+  <br />       
 
 </div>
 </div>
