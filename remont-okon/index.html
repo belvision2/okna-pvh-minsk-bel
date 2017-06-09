@@ -1,5 +1,5 @@
 
-<?php include("../prais/password_protect.php"); ?>
+
 <?php 
 include_once('../prais/prais.php'); 
 ?>

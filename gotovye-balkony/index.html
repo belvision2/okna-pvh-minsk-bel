@@ -1,5 +1,5 @@
 
-<?php include("../prais/password_protect.php"); ?>
+
 <?php 
 include_once('../prais/prais.php'); 
 ?>
@@ -58,10 +58,10 @@ include_once('../prais/prais.php');
 			  	<div class="top_block__logo"><a href="../index.html"><img src="../img/logo.png" alt="" class=""></a></div>
 		  	</div>
 		  	<div class="col-md-4 col-sm-4">
-			  						<a style="text-decoration:none;" class="black" href="tel:+375291264455"><div class="top_block__tel comagic_phone velcom" style="margin-top: 20px;">+375 29 126-44-55</div></a>
-			<a style="text-decoration:none;" class="black" href="tel:+375172771694"><div class="top_block__tel comagic_phone home" style="margin-top: 0px;">+375 17 277-16-94</div></a>		  	</div>
+			  						<a style="text-decoration:none;" class="black" href="tel:<?php echo $tell_velcom1; ?>"><div class="top_block__tel comagic_phone velcom" style="margin-top: 20px;"><?php echo $tell_velcom1; ?></div></a>
+			<a style="text-decoration:none;" class="black" href="tel:<?php echo $tell_velcom2; ?>"><div class="top_block__tel comagic_phone home" style="margin-top: 0px;"><?php echo $tell_velcom2; ?></div></a>		  	</div>
 		  	<div class="col-md-4 col-sm-4">
-			  	<a style="text-decoration:none;" class="black" href="tel:+375 29 276-44-55"><div class="top_block__tel comagic_phone mts">+375 29 276-44-55</div></a>
+			  	<a style="text-decoration:none;" class="black" href="tel:<?php echo $tell_mts; ?>"><div class="top_block__tel comagic_phone mts"><?php echo $tell_mts; ?></div></a>
 			  	<div class="top_block__vamperez" data-toggle="modal" data-target="#kupitDeshevle"><span>Вам перезвонить?</span></div>
 		  	</div>
 	  	</div>
@@ -216,7 +216,7 @@ include_once('../prais/prais.php');
 		<table class="data-table" cellspacing="0" cellpadding="2">
 	<thead>
 		<tr>
-			<td colspan="2" align="center">������</td>
+			<td colspan="2" align="center">������</td>
 		</tr>
 	</thead>
 	<tbody>
@@ -236,7 +236,7 @@ include_once('../prais/prais.php');
 	<tfoot>
 		<tr>
 			<td colspan="2">
-				<input type="submit" name="set_filter" value="������" /><input type="hidden" name="set_filter" value="Y" />&nbsp;&nbsp;<input type="submit" name="del_filter" value="��������" /></td>
+				<input type="submit" name="set_filter" value="������" /><input type="hidden" name="set_filter" value="Y" />&nbsp;&nbsp;<input type="submit" name="del_filter" value="��������" /></td>
 		</tr>
 	</tfoot>
 	</table>
@@ -258,12 +258,12 @@ include_once('../prais/prais.php');
 			
 						<div class="b-marketlist__item_bageout"><div class="b-marketlist__item_bage">
 				<span class="b-marketlist__item_vashek">Ваша экономия</span><br>
-				<span class="b-marketlist__item_econom">119 <span>р.</span></span>
+				<span class="b-marketlist__item_econom"><?php echo $balkon_1_econom; ?> <span>р.</span></span>
 			</div></div>
 			
 						
 			
-			<div class="b-marketlist__item_tsena">288 <span>рублей</span></div>
+			<div class="b-marketlist__item_tsena"><?php echo $balkon_1; ?> <span>рублей</span></div>
 			<div class="b-marketlist__item_descr">
 				<div class="row">
 					<div class="col-sm-4">Артикул: <span>Б-001</span></div>					<div class="col-sm-4">Ширина: <span>190 см</span></div>					<div class="col-sm-4">Высота: <span>145 см</span></div>					
@@ -291,12 +291,12 @@ include_once('../prais/prais.php');
 			
 						<div class="b-marketlist__item_bageout"><div class="b-marketlist__item_bage">
 				<span class="b-marketlist__item_vashek">Ваша экономия</span><br>
-				<span class="b-marketlist__item_econom">138 <span>р.</span></span>
+				<span class="b-marketlist__item_econom"><?php echo $balkon_2_econom; ?> <span>р.</span></span>
 			</div></div>
 			
 						
 			
-			<div class="b-marketlist__item_tsena">499 <span>рублей</span></div>
+			<div class="b-marketlist__item_tsena"><?php echo $balkon_2; ?> <span>рублей</span></div>
 			<div class="b-marketlist__item_descr">
 				<div class="row">
 					<div class="col-sm-4">Артикул: <span>Б-004</span></div>					<div class="col-sm-4">Ширина: <span>290 см</span></div>					<div class="col-sm-4">Высота: <span>145 см</span></div>					
@@ -324,12 +324,12 @@ include_once('../prais/prais.php');
 			
 						<div class="b-marketlist__item_bageout"><div class="b-marketlist__item_bage">
 				<span class="b-marketlist__item_vashek">Ваша экономия</span><br>
-				<span class="b-marketlist__item_econom">138 <span>р.</span></span>
+				<span class="b-marketlist__item_econom"><?php echo $balkon_3_econom; ?> <span>р.</span></span>
 			</div></div>
 			
 						
 			
-			<div class="b-marketlist__item_tsena">499 <span>рублей</span></div>
+			<div class="b-marketlist__item_tsena"><?php echo $balkon_3; ?> <span>рублей</span></div>
 			<div class="b-marketlist__item_descr">
 				<div class="row">
 					<div class="col-sm-4">Артикул: <span>Б-004</span></div>					<div class="col-sm-4">Ширина: <span>290 см</span></div>					<div class="col-sm-4">Высота: <span>145 см</span></div>					
@@ -357,12 +357,12 @@ include_once('../prais/prais.php');
 			
 						<div class="b-marketlist__item_bageout"><div class="b-marketlist__item_bage">
 				<span class="b-marketlist__item_vashek">Ваша экономия</span><br>
-				<span class="b-marketlist__item_econom">125 <span>р.</span></span>
+				<span class="b-marketlist__item_econom"><?php echo $balkon_4_econom; ?> <span>р.</span></span>
 			</div></div>
 			
 						
 			
-			<div class="b-marketlist__item_tsena">459 <span>рублей</span></div>
+			<div class="b-marketlist__item_tsena"><?php echo $balkon_4; ?> <span>рублей</span></div>
 			<div class="b-marketlist__item_descr">
 				<div class="row">
 					<div class="col-sm-4">Артикул: <span>Б-005</span></div>					<div class="col-sm-4">Ширина: <span>350 см</span></div>					<div class="col-sm-4">Высота: <span>145 см</span></div>					
@@ -390,12 +390,12 @@ include_once('../prais/prais.php');
 			
 						<div class="b-marketlist__item_bageout"><div class="b-marketlist__item_bage">
 				<span class="b-marketlist__item_vashek">Ваша экономия</span><br>
-				<span class="b-marketlist__item_econom">145 <span>р.</span></span>
+				<span class="b-marketlist__item_econom"><?php echo $balkon_5_econom; ?> <span>р.</span></span>
 			</div></div>
 			
 						
 			
-			<div class="b-marketlist__item_tsena">580 <span>рублей</span></div>
+			<div class="b-marketlist__item_tsena"><?php echo $balkon_5; ?> <span>рублей</span></div>
 			<div class="b-marketlist__item_descr">
 				<div class="row">
 					<div class="col-sm-4">Артикул: <span>Б-006</span></div>					<div class="col-sm-4">Ширина: <span>350 см</span></div>					<div class="col-sm-4">Высота: <span>145 см</span></div>					
@@ -423,12 +423,12 @@ include_once('../prais/prais.php');
 			
 						<div class="b-marketlist__item_bageout"><div class="b-marketlist__item_bage">
 				<span class="b-marketlist__item_vashek">Ваша экономия</span><br>
-				<span class="b-marketlist__item_econom">127 <span>р.</span></span>
+				<span class="b-marketlist__item_econom"><?php echo $balkon_6_econom; ?> <span>р.</span></span>
 			</div></div>
 			
 						
 			
-			<div class="b-marketlist__item_tsena">630 <span>рублей</span></div>
+			<div class="b-marketlist__item_tsena"><?php echo $balkon_6; ?> <span>рублей</span></div>
 			<div class="b-marketlist__item_descr">
 				<div class="row">
 					<div class="col-sm-4">Артикул: <span>Б-002</span></div>					<div class="col-sm-4">Ширина: <span>350 см</span></div>					<div class="col-sm-4">Высота: <span>145 см</span></div>					
@@ -790,11 +790,11 @@ include_once('../prais/prais.php');
 						<div class="es19_time hidden-md hidden-sm hidden-xs">
 с 8:00 до 23:00						</div>
 						<div class="es19_telemail">
-							<a style="text-decoration:none;" class="black" href="tel:+375 29 276-44-55"><div class="comagic_phone mts">+375 29 276-44-55</div></a>
-							<span>e-mail: <a href="mailto:vo.minsk@tut.by">vo.minsk@tut.by</a></span>							
+				
+							<span>e-mail: <a href="mailto:vidokon@mail.ru">vidokon@mail.ru</a></span>							
 						</div>
 					</div>
-  <div class="es19__copyr"><!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.by/stat/?id=42526019&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/42526019/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="42526019" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42526019 = new Ya.Metrika({ id:42526019, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42526019" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <div class="es19__copyr"><!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.by/stat/?id=44869402&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/44869402/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="44869402" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44869402 = new Ya.Metrika({ id:44869402, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44869402" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
             <div style="line-height: 1.4;display:none"><span>Оплатить заказ картой:</span><br/>
                 <a href="../pay/index.html">Оплата с сайта</a>
             </div>
