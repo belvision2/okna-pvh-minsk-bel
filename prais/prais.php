@@ -41,6 +41,30 @@ $balkon_3 = 499;
 $balkon_4 = 459;
 $balkon_5 = 580;
 $balkon_6 = 630;
+$okno_1 = 288;
+$okno_2 = 499;
+$okno_3 = 499;
+$okno_4 = 459;
+$okno_5 = 580;
+$okno_6 = 630;
+$stoim_dver = 164;
+$stoim_dver2 = 200.6;
+$stoim_oknogluh = 122;
+$stoim_oknopovorototkid = 185;
+$stoim_oknopovorot = 178;
+$skidka = 0.1;
+$podokonnik = 20;
+$montazhrab = 44;
+$koeffits = 1;
+$vashaeconomiya = 0.4;
+$rassrochkames = 5;
+$stoim_balk = 132; //балконы
+$skidka_b = 0.1;
+$podokonnik_b = 15;
+$montazhrab_b = 30.5;
+$koeffits_b = 1;
+$vashaeconomiya_b = 0.3;
+$rassrochkames_b = 8;
 
 // переменные не меняемые
 $cena_okna_dileri = $cena_okna+50;
@@ -75,6 +99,13 @@ $balkon_3_econom = round(($balkon_3/0.7-$balkon_3),0);
 $balkon_4_econom = round(($balkon_4/0.7-$balkon_4),0);
 $balkon_5_econom = round(($balkon_5/0.7-$balkon_5),0);
 $balkon_6_econom = round(($balkon_6/0.7-$balkon_6),0);
+
+$okno_1_econom = round(($okno_1/0.7-$okno_1),0);
+$okno_2_econom = round(($okno_2/0.7-$okno_2),0);
+$okno_3_econom = round(($okno_3/0.7-$okno_3),0);
+$okno_4_econom = round(($okno_4/0.7-$okno_4),0);
+$okno_5_econom = round(($okno_5/0.7-$okno_5),0);
+$okno_6_econom = round(($okno_6/0.7-$okno_6),0);
 
 $balkon_shapka_dileri = $balkon_shapka+50;
 $balkon_shapka_perekup = $balkon_shapka+80;

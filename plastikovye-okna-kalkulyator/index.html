@@ -164,7 +164,7 @@ include_once('../prais/prais.php');
 	  shir_dver_max = 110;
 	  vysota_dver_min = 170;
 	  vysota_dver_max = 230;
-	  stoim_dver = 164;
+	  stoim_dver = <?php echo $stoim_dver; ?>;
 	 
 	 
 	  //ПВХ Дверь балконная двухстворчатая
@@ -172,7 +172,7 @@ include_once('../prais/prais.php');
 	  shir_dver2_max = 220;
 	  vysota_dver2_min = 170;
 	  vysota_dver2_max = 230;
-	  stoim_dver2 = 200.6;
+	  stoim_dver2 = <?php echo $stoim_dver2; ?>;
 	 
 	 
 	  //ОКНО ГЛУХОЕ 
@@ -180,7 +180,7 @@ include_once('../prais/prais.php');
 	  shir_oknogluh_max = 130;
 	  vysota_oknogluh_min = 40;
 	  vysota_oknogluh_max = 220;
-	  stoim_oknogluh = 122;
+	  stoim_oknogluh = <?php echo $stoim_oknogluh; ?>;
 	 
 	 
 	  //ОКНО ПОВОРОТНО – ОТКИДНОЕ 
@@ -188,7 +188,7 @@ include_once('../prais/prais.php');
 	  shir_oknopovorototkid_max = 125;
 	  vysota_oknopovorototkid_min = 50;
 	  vysota_oknopovorototkid_max = 230;
-	  stoim_oknopovorototkid = 185;
+	  stoim_oknopovorototkid = <?php echo $stoim_oknopovorototkid; ?>;
 		 
 		 
 	 //ОКНО ПОВОРОТНОЕ 
@@ -196,26 +196,27 @@ include_once('../prais/prais.php');
 	 shir_oknopovorot_max = 130;
 	 vysota_oknopovorot_min = 45;
 	 vysota_oknopovorot_max = 225;
-	 stoim_oknopovorot = 178;
+	 stoim_oknopovorot = <?php echo $stoim_oknopovorot; ?>;
 	 
 	 
 	 //СКИДКА процент скидки
-	 skidka = 0.1;
+	  //СКИДКА процент скидки
+	  skidka = 0.1;
 	 		 
 	 //ПОДОКОННИК и ОТЛИВ за м
-	 podokonnik = 20;
+	 podokonnik = <?php echo $podokonnik; ?>;
 	 
 	 //МОНТАЖНЫЕ РАБОТЫ за м2 
-	 montazhrab = 44;
+	 montazhrab = <?php echo $montazhrab; ?>;
 	 
 	 //КОЭФФИЦИЕНТ К СТОИМОСТИ ОКОН
-	 koeffits = 1; 
+	 koeffits = <?php echo $koeffits; ?>; 
 	 
 	 //ВАША ЭКОНОМИЯ
-	 vashaeconomiya = 0.4; // 0.4 - это 40%
+	 vashaeconomiya = <?php echo $vashaeconomiya; ?>; // 0.4 - это 40%
 	 
 	 //РАССРОЧКА. количество месяцев 
-	 rassrochkames = 5; 
+	 rassrochkames = <?php echo $rassrochkames; ?>; 
 	
 	 
 </script><script type="text/javascript">
@@ -2331,7 +2332,7 @@ $("#sliderver a.ui-slider-handle:eq(0)").css("display","none");
 					</div>
 <div class="es19__copyr"><!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.by/stat/?id=44869402&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/44869402/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="44869402" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44869402 = new Ya.Metrika({ id:44869402, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44869402" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
             
-               &reg; Все права защищены 2009-2017
+               &reg; 
             </div>
         </div>					
 					 			

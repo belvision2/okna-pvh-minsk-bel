@@ -1,5 +1,3 @@
-
-<?php include("../prais/password_protect.php"); ?>
 <?php 
 include_once('../prais/prais.php'); 
 ?>
@@ -11,14 +9,14 @@ include_once('../prais/prais.php');
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="robots" content="index, follow" />
-<meta name="keywords" content="&quot;Окна Минск на заказ&quot; - готовые окна" />
-<meta name="description" content="&quot;Окна Минск на заказ&quot; - готовые окна" />
+<meta name="keywords" content="&quot;Окна ПВХ Минск&quot; - готовые окна" />
+<meta name="description" content="&quot;Окна ПВХ Минск&quot; - готовые окна" />
 <link href="../bitrix/cache/css/s1/okna-tseny__main/page_fac0b45a6449f97ac0d905f9e2df7e88/page_fac0b45a6449f97ac0d905f9e2df7e88e61f.css?14725614042203" type="text/css"  rel="stylesheet" />
 <link href="../bitrix/cache/css/s1/okna-tseny__main/template_782db5a3a4771b41b6b75420095b9647/template_782db5a3a4771b41b6b75420095b9647bb04.css?14725589754379" type="text/css"  data-template-style="true"  rel="stylesheet" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     
-	<title>"Окна Минск на заказ" - готовые окна</title>
+	<title>Окна ПВХ Минск - готовые окна</title>
         
 	<link rel="icon" href="../favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -39,7 +37,7 @@ include_once('../prais/prais.php');
 
 
 
-  </head>
+    </head>
   
   <body>
 	  <div class="topclose5px"></div>
@@ -58,10 +56,10 @@ include_once('../prais/prais.php');
 			  	<div class="top_block__logo"><a href="../index.html"><img src="../img/logo.png" alt="" class=""></a></div>
 		  	</div>
 		  	<div class="col-md-4 col-sm-4">
-			  						<a style="text-decoration:none;" class="black" href="tel:+375291264455"><div class="top_block__tel comagic_phone velcom" style="margin-top: 20px;">+375 29 126-44-55</div></a>
-			<a style="text-decoration:none;" class="black" href="tel:+375172771694"><div class="top_block__tel comagic_phone home" style="margin-top: 0px;">+375 17 277-16-94</div></a>		  	</div>
+			  						<a style="text-decoration:none;" class="black" href="tel:<?php echo $tell_velcom1; ?>"><div class="top_block__tel comagic_phone velcom" style="margin-top: 20px;"><?php echo $tell_velcom1; ?></div></a>
+			<a style="text-decoration:none;" class="black" href="tel:<?php echo $tell_velcom2; ?>"><div class="top_block__tel comagic_phone home" style="margin-top: 0px;"><?php echo $tell_velcom2; ?></div></a>		  	</div>
 		  	<div class="col-md-4 col-sm-4">
-			  	<a style="text-decoration:none;" class="black" href="tel:+375 29 276-44-55"><div class="top_block__tel comagic_phone mts">+375 29 276-44-55</div></a>
+			  	<a style="text-decoration:none;" class="black" href="tel:<?php echo $tell_mts; ?>"><div class="top_block__tel comagic_phone mts"><?php echo $tell_mts; ?></div></a>
 			  	<div class="top_block__vamperez" data-toggle="modal" data-target="#kupitDeshevle"><span>Вам перезвонить?</span></div>
 		  	</div>
 	  	</div>
@@ -216,7 +214,7 @@ include_once('../prais/prais.php');
 		<table class="data-table" cellspacing="0" cellpadding="2">
 	<thead>
 		<tr>
-			<td colspan="2" align="center">������</td>
+			<td colspan="2" align="center">������</td>
 		</tr>
 	</thead>
 	<tbody>
@@ -236,7 +234,7 @@ include_once('../prais/prais.php');
 	<tfoot>
 		<tr>
 			<td colspan="2">
-				<input type="submit" name="set_filter" value="������" /><input type="hidden" name="set_filter" value="Y" />&nbsp;&nbsp;<input type="submit" name="del_filter" value="��������" /></td>
+				<input type="submit" name="set_filter" value="������" /><input type="hidden" name="set_filter" value="Y" />&nbsp;&nbsp;<input type="submit" name="del_filter" value="��������" /></td>
 		</tr>
 	</tfoot>
 	</table>
@@ -258,12 +256,12 @@ include_once('../prais/prais.php');
 			
 						<div class="b-marketlist__item_bageout"><div class="b-marketlist__item_bage">
 				<span class="b-marketlist__item_vashek">Ваша экономия</span><br>
-				<span class="b-marketlist__item_econom">38 <span>р.</span></span>
+				<span class="b-marketlist__item_econom"><?php echo $okno_1_econom; ?> <span>р.</span></span>
 			</div></div>
 			
 						
 			
-			<div class="b-marketlist__item_tsena">115 <span>рублей</span></div>
+			<div class="b-marketlist__item_tsena"><?php echo $okno_1; ?> <span>рублей</span></div>
 			<div class="b-marketlist__item_descr">
 				<div class="row">
 					<div class="col-sm-4">Артикул: <span>П-003</span></div>					<div class="col-sm-4">Ширина: <span>70 см</span></div>					<div class="col-sm-4">Высота: <span>90 см</span></div>					
@@ -291,12 +289,12 @@ include_once('../prais/prais.php');
 			
 						<div class="b-marketlist__item_bageout"><div class="b-marketlist__item_bage">
 				<span class="b-marketlist__item_vashek">Ваша экономия</span><br>
-				<span class="b-marketlist__item_econom">52 <span>р.</span></span>
+				<span class="b-marketlist__item_econom"><?php echo $okno_2_econom; ?> <span>р.</span></span>
 			</div></div>
 			
 						
 			
-			<div class="b-marketlist__item_tsena">199 <span>рублей</span></div>
+			<div class="b-marketlist__item_tsena"><?php echo $okno_2; ?> <span>рублей</span></div>
 			<div class="b-marketlist__item_descr">
 				<div class="row">
 					<div class="col-sm-4">Артикул: <span>П-002</span></div>					<div class="col-sm-4">Ширина: <span>115 см</span></div>					<div class="col-sm-4">Высота: <span>138 см</span></div>					
@@ -324,12 +322,12 @@ include_once('../prais/prais.php');
 			
 						<div class="b-marketlist__item_bageout"><div class="b-marketlist__item_bage">
 				<span class="b-marketlist__item_vashek">Ваша экономия</span><br>
-				<span class="b-marketlist__item_econom">58 <span>р.</span></span>
+				<span class="b-marketlist__item_econom"><?php echo $okno_3_econom; ?> <span>р.</span></span>
 			</div></div>
 			
 						
 			
-			<div class="b-marketlist__item_tsena">225 <span>рублей</span></div>
+			<div class="b-marketlist__item_tsena"><?php echo $okno_3; ?> <span>рублей</span></div>
 			<div class="b-marketlist__item_descr">
 				<div class="row">
 					<div class="col-sm-4">Артикул: <span>П-001</span></div>					<div class="col-sm-4">Ширина: <span>145 см</span></div>					<div class="col-sm-4">Высота: <span>145 см</span></div>					
@@ -357,12 +355,12 @@ include_once('../prais/prais.php');
 			
 						<div class="b-marketlist__item_bageout"><div class="b-marketlist__item_bage">
 				<span class="b-marketlist__item_vashek">Ваша экономия</span><br>
-				<span class="b-marketlist__item_econom">63 <span>р.</span></span>
+				<span class="b-marketlist__item_econom"><?php echo $okno_4_econom; ?> <span>р.</span></span>
 			</div></div>
 			
 						
 			
-			<div class="b-marketlist__item_tsena">255 <span>рублей</span></div>
+			<div class="b-marketlist__item_tsena"><?php echo $okno_4; ?> <span>рублей</span></div>
 			<div class="b-marketlist__item_descr">
 				<div class="row">
 					<div class="col-sm-4">Артикул: <span>П-004</span></div>					<div class="col-sm-4">Ширина: <span>135 см</span></div>					<div class="col-sm-4">Высота: <span>135 см</span></div>					
@@ -390,12 +388,12 @@ include_once('../prais/prais.php');
 			
 						<div class="b-marketlist__item_bageout"><div class="b-marketlist__item_bage">
 				<span class="b-marketlist__item_vashek">Ваша экономия</span><br>
-				<span class="b-marketlist__item_econom">67 <span>р.</span></span>
+				<span class="b-marketlist__item_econom"><?php echo $okno_5_econom; ?> <span>р.</span></span>
 			</div></div>
 			
 						
 			
-			<div class="b-marketlist__item_tsena">280 <span>рублей</span></div>
+			<div class="b-marketlist__item_tsena"><?php echo $okno_5; ?> <span>рублей</span></div>
 			<div class="b-marketlist__item_descr">
 				<div class="row">
 					<div class="col-sm-4">Артикул: <span>П-005</span></div>					<div class="col-sm-4">Ширина: <span>175 см</span></div>					<div class="col-sm-4">Высота: <span>145 см</span></div>					
@@ -423,12 +421,12 @@ include_once('../prais/prais.php');
 			
 						<div class="b-marketlist__item_bageout"><div class="b-marketlist__item_bage">
 				<span class="b-marketlist__item_vashek">Ваша экономия</span><br>
-				<span class="b-marketlist__item_econom">61 <span>р.</span></span>
+				<span class="b-marketlist__item_econom"><?php echo $okno_6_econom; ?> <span>р.</span></span>
 			</div></div>
 			
 						
 			
-			<div class="b-marketlist__item_tsena">259 <span>рублей</span></div>
+			<div class="b-marketlist__item_tsena"><?php echo $okno_6; ?> <span>рублей</span></div>
 			<div class="b-marketlist__item_descr">
 				<div class="row">
 					<div class="col-sm-4">Артикул: <span>П-006</span></div>					<div class="col-sm-4">Ширина: <span>115 см</span></div>					<div class="col-sm-4">Высота: <span>138 см</span></div>					
@@ -465,7 +463,7 @@ include_once('../prais/prais.php');
 			
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
-				<div class="es13_14__desc">Компания "Окна Минск на заказ" уделяет огромное внимание и выделяет до 1 000 руб. в месяц на своих заказчиков! Скидки, подарки, розыгрыши и другие приятные сюрпризы - МЫ ЛЮБИМ ВАС!</div>
+				<div class="es13_14__desc">Компания Окна ПВХ Минск уделяет огромное внимание и выделяет до 1 000 руб. в месяц на своих заказчиков! Скидки, подарки, розыгрыши и другие приятные сюрпризы - МЫ ЛЮБИМ ВАС!</div>
 			</div>
 			<div class="col-md-1"></div>
 		</div>
@@ -493,7 +491,7 @@ include_once('../prais/prais.php');
 							<div class="row">
 								<div class="es15_left"></div>
 								<div class="es14_otz">
-									<div class="es14_otz_zag">Очень рад!</div>									<div class="es14_otz_text">Мне нужно было одно пластиковое окно на кухню. Не смотря на минимально возможный заказ в офисе «Окна Минск на заказ» меня окружили вниманием, как будто я заказывал остекление многоэтажного дома.  Больше никуда не ходил, подписал договор с этой компанией и не жалею. Окно отличное, установлено на совесть. Большое спасибо за такое отношение к людям.</div>									
+									<div class="es14_otz_zag">Очень рад!</div>									<div class="es14_otz_text">Мне нужно было одно пластиковое окно на кухню. Не смотря на минимально возможный заказ в офисе Окна ПВХ Минск меня окружили вниманием, как будто я заказывал остекление многоэтажного дома.  Больше никуда не ходил, подписал договор с этой компанией и не жалею. Окно отличное, установлено на совесть. Большое спасибо за такое отношение к людям.</div>									
 								</div><!-- es14_otz -->
 								<div class="es15_right"></div>
 								
@@ -511,7 +509,7 @@ include_once('../prais/prais.php');
 							<div class="row">
 								<div class="es15_left"></div>
 								<div class="es14_otz">
-									<div class="es14_otz_zag">Большое спасибо!</div>									<div class="es14_otz_text">Говорю большое спасибо «Окна Минск на заказ» за установленное окно на кухне. Особо хочу поблагодарить монтажников, сделали всё аккуратно и чисто. Честно, я даже не ожидала, что даже для такого мелкого, как я заказчика, будет столько внимания и расположения. Это очень приятно.</div>									
+									<div class="es14_otz_zag">Большое спасибо!</div>									<div class="es14_otz_text">Говорю большое спасибо Окна ПВХ Минск за установленное окно на кухне. Особо хочу поблагодарить монтажников, сделали всё аккуратно и чисто. Честно, я даже не ожидала, что даже для такого мелкого, как я заказчика, будет столько внимания и расположения. Это очень приятно.</div>									
 								</div><!-- es14_otz -->
 								<div class="es15_right"></div>
 								
@@ -529,7 +527,7 @@ include_once('../prais/prais.php');
 							<div class="row">
 								<div class="es15_left"></div>
 								<div class="es14_otz">
-									<div class="es14_otz_zag">Очень доступно и быстро!</div>									<div class="es14_otz_text">Два пластиковых окна я купил в фирме «Окна Минск на заказ». Покупка по деньгам получилась очень доступная.  Сроки выдержаны. Поставлены здорово. Замечаний нет. Думаю до зимы ещё балкон остеклить. Здесь это тоже можно заказать. Обязательно приду только сюда. </div>									
+									<div class="es14_otz_zag">Очень доступно и быстро!</div>									<div class="es14_otz_text">Два пластиковых окна я купил в фирме Окна ПВХ Минск. Покупка по деньгам получилась очень доступная.  Сроки выдержаны. Поставлены здорово. Замечаний нет. Думаю до зимы ещё балкон остеклить. Здесь это тоже можно заказать. Обязательно приду только сюда. </div>									
 								</div><!-- es14_otz -->
 								<div class="es15_right"></div>
 								
@@ -547,7 +545,7 @@ include_once('../prais/prais.php');
 							<div class="row">
 								<div class="es15_left"></div>
 								<div class="es14_otz">
-									<div class="es14_otz_zag">Молодцы! Спасибо!</div>									<div class="es14_otz_text">Мастера предприятия «ОКНА  Минск на заказ» выполняли в моей квартире остекление и отделку балкона (внутреннюю и наружную). Работы предстояла серьезная. Вся работа у специалистов заняла всего три рабочих дня. Это с демонтажем старого остекления, наружной и внутренней отделкой. Мне очень понравилось. Молодцы!!! Так держать!!!</div>									
+									<div class="es14_otz_zag">Молодцы! Спасибо!</div>									<div class="es14_otz_text">Мастера предприятия Окна ПВХ Минск выполняли в моей квартире остекление и отделку балкона (внутреннюю и наружную). Работы предстояла серьезная. Вся работа у специалистов заняла всего три рабочих дня. Это с демонтажем старого остекления, наружной и внутренней отделкой. Мне очень понравилось. Молодцы!!! Так держать!!!</div>									
 								</div><!-- es14_otz -->
 								<div class="es15_right"></div>
 								
@@ -586,64 +584,20 @@ include_once('../prais/prais.php');
 
 
 
-    <div class="es16_bg">
+ <div class="es16_bg">
 	    
 	    <div class="es16_zag">Окна установленные в 2016 году</div>
 	    			
 
 				<div class="thanky">
             <div class="zoom-gallery" id="zoom-instance-1" style="margin: 0px auto; width: 900px; height: 397px;">
-                <img src="../img/showcase/assets/preloader.gif" class="preloader" width="55" height="18" alt="preloader" />
+                <img src="img/showcase/assets/preloader.gif" class="preloader" width="55" height="18" alt="preloader" />
                 <ul>
-	
-	
-                    <li title="/upload/iblock/190/190495aa9a2de2241faef085d9c0ea73.jpg" >
-                    		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Пластиковое окно в комнате. Цена: <span>345 р.</span></li>
-                        </ul>
-                    </li>
-                    
-                    
-                    
-																
-	
-	
-                    <li title="/upload/iblock/a0b/a0b2e7d22b74f6d8a76b02901fafe64c.jpg" >
-                    		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Остекление лоджии ПВХ окнами. Цена: <span>1050 р.</span></li>
-                        </ul>
-                    </li>
-                    
-                    
-                    
-																
-	
-	
-                    <li title="/upload/iblock/59e/59eb7088aa8f2c35ec0ceb3917160bd6.jpg" >
-                    		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Окна в доме П-44Т. Цена: <span>579 р.</span></li>
-                        </ul>
-                    </li>
-                    
-                    
-                    
-																
-	
-	
-                    <li title="/upload/iblock/29c/29c85b8835f4fa9f01e79ba6f64d9027.jpg" >
-                    		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Окно с витражами. Цена: <span>390 р.</span></li>
-                        </ul>
-                    </li>
-                    
-                    
-                    
-																
 	
 	
                     <li title="/upload/iblock/e01/e0178fa63737be7bb2af085417e82441.jpg" >
                     		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Ламинированная лоджия 4 м. Цена: <span>820 р.</span></li>
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Ламинированная лоджия 4 м. Цена: <span><?php echo $o5; ?> р.</span></li>
                         </ul>
                     </li>
                     
@@ -654,7 +608,40 @@ include_once('../prais/prais.php');
 	
                     <li title="/upload/iblock/5da/5daf814cd65f6f7f72233e08775ba2ae.jpg" >
                     		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">ПВХ окно в комнате. Цена: <span>285 р.</span></li>
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">ПВХ окно в комнате. Цена: <span><?php echo $o4; ?> р.</span></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    
+																
+	
+	
+                    <li title="/upload/iblock/29c/29c85b8835f4fa9f01e79ba6f64d9027.jpg" >
+                    		<ul class="align-left">                            
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Окно с витражами. Цена: <span><?php echo $o1; ?> р.</span></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    
+																
+	
+	
+                    <li title="/upload/iblock/190/190495aa9a2de2241faef085d9c0ea73.jpg" >
+                    		<ul class="align-left">                            
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Пластиковое окно в комнате. Цена: <span><?php echo $o2; ?> р.</span></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    
+																
+	
+	
+                    <li title="/upload/iblock/59e/59eb7088aa8f2c35ec0ceb3917160bd6.jpg" >
+                    		<ul class="align-left">                            
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Окна в доме П-44Т. Цена: <span><?php echo $o3; ?> р.</span></li>
                         </ul>
                     </li>
                     
@@ -665,7 +652,18 @@ include_once('../prais/prais.php');
 	
                     <li title="/upload/iblock/626/626b802c633d4444126be27f2b217338.jpg" >
                     		<ul class="align-left">                            
-                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Ламинированные окна. Цена: <span>690 р.</span></li>
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Ламинированные окна. Цена: <span><?php echo $o7; ?> р.</span></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    
+																
+	
+	
+                    <li title="/upload/iblock/a0b/a0b2e7d22b74f6d8a76b02901fafe64c.jpg" >
+                    		<ul class="align-left">                            
+                            <li class="20x308" style="background-color: none; color: #464545; font-size:2.4em; line-height:30px; height:auto;">Остекление лоджии ПВХ окнами. Цена: <span><?php echo $o6; ?> р.</span></li>
                         </ul>
                     </li>
                     
@@ -677,7 +675,7 @@ include_once('../prais/prais.php');
                 <!-- If JavaScript is disabled, we'll just display the first image -->
                 <noscript>
                     <div id="noscript">
-                    	<img src="../upload/iblock/190/190495aa9a2de2241faef085d9c0ea73.jpg" alt="" />
+                    	<img src="upload/iblock/e01/e0178fa63737be7bb2af085417e82441.jpg" alt="" />
                     </div>
                 </noscript>
             </div>
@@ -685,8 +683,8 @@ include_once('../prais/prais.php');
             <a id="thanky-right-button" href="#"></a>            		
         </div>
         <div class="onmobile">
-                    	<img src="../upload/iblock/190/190495aa9a2de2241faef085d9c0ea73.jpg" alt="" />
-                    	<div class="onmobile-info-text">Пластиковое окно в комнате. Цена: <span>12 80 р.</span></div>
+                    	<img src="upload/iblock/e01/e0178fa63737be7bb2af085417e82441.jpg" alt="" />
+                    	<div class="onmobile-info-text">Ламинированная лоджия 4 м. Цена: <span>820 р.</span></div>
         </div>        
         
 
@@ -704,7 +702,7 @@ include_once('../prais/prais.php');
 				
 				<div class="es17__rasp">Ежедневно с 8:00 до 23:00</div>
 				
-				<a style="text-decoration:none;" class="black" href="tel:+375 29 276-44-55"><div class="es17__tel comagic_phone mts">+375 29 276-44-55</div></a>
+				<a style="text-decoration:none;" class="black" href="tel:+375 29 951-53-33"><div class="es17__tel comagic_phone ">+375 29 951-53-33</div></a>
 				
 				<div class="es17_blockbg">
 					Оставьте свой номер телефона
@@ -786,11 +784,11 @@ include_once('../prais/prais.php');
 						<div class="es19_time hidden-md hidden-sm hidden-xs">
 с 8:00 до 23:00						</div>
 						<div class="es19_telemail">
-							<a style="text-decoration:none;" class="black" href="tel:+375 29 276-44-55"><div class="comagic_phone mts">+375 29 276-44-55</div></a>
-							<span>e-mail: <a href="mailto:vo.minsk@tut.by">vo.minsk@tut.by</a></span>							
+						
+							<span>e-mail: <a href="mailto:vidokon@mail.ru">vidokon@mail.ru</a></span>							
 						</div>
 					</div>
-  <div class="es19__copyr"><!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.by/stat/?id=42526019&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/42526019/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="42526019" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42526019 = new Ya.Metrika({ id:42526019, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42526019" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <div class="es19__copyr"><!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.by/stat/?id=44869402&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/44869402/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="44869402" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44869402 = new Ya.Metrika({ id:44869402, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44869402" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
             <div style="line-height: 1.4;display:none"><span>Оплатить заказ картой:</span><br/>
                 <a href="../pay/index.html">Оплата с сайта</a>
             </div>
@@ -1049,7 +1047,7 @@ include_once('../prais/prais.php');
             об этом.</p>
 
         <div class="b-legalinfo__subheader">1. Общие положения</div>
-        <p>1.1. Материалы, размещенные на данном Сайте предоставляются Компанией «Окна Минск на заказ» (далее Компания) исключительно в информативных целях. Все данные на Сайте представлены «Как
+        <p>1.1. Материалы, размещенные на данном Сайте предоставляются Компанией Окна ПВХ Минск (далее Компания) исключительно в информативных целях. Все данные на Сайте представлены «Как
             есть»
             с возможными ошибками, без каких-либо явных и подразумеваемых гарантий. Информация, размещенная на Сайте Компании, является полностью верной только при наличии письменного
             подтверждения от Компании.</p>
@@ -1068,7 +1066,7 @@ include_once('../prais/prais.php');
         (копирование, воспроизведение, изменение, публикация в любом виде, пересылка и другие возможные варианты) вне Сайта возможно только при наличии письменного разрешения Компании.</p>
         <p>2.2. Сайт содержит информацию, тексты, фотографии, дизайнерские работы, графику, изображения, звуко- и видеозаписи, а также другие материалы и произведения, включающие
         интеллектуальную собственность, права на которую принадлежат Компании. Все товарные знаки (логотипы, доменные имена, материалы, описывающие услуги Компании, или содержащие в своём
-        названии словосочетание «Окна Минск на заказ», являющиеся частью информации Сайта), являются собственностью Компании.</p>
+        названии словосочетание Окна ПВХ Минск, являющиеся частью информации Сайта), являются собственностью Компании.</p>
         <p>2.3. Любое видоизменение и использование в коммерческих целях товарных знаков Компании или их производных, строго запрещено. Исключения возможны только с письменного разрешения
         Компании.</p>
         <p>2.4. Все прочие названия продукции и компаний, приведенные на Сайте, могут являться товарными знаками своих владельцев и не могут быть использованы без их согласия.</p>
