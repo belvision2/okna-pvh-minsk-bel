@@ -198,28 +198,30 @@ include_once('../prais/prais.php');
 	 vysota_oknopovorot_max = 225;
 	 stoim_oknopovorot = <?php echo $stoim_oknopovorot; ?>;
 	 
-	 
 	 //СКИДКА процент скидки
-	  //СКИДКА процент скидки
-	  skidka = 0.1;
+	 skidka = 0.1;
 	 		 
 	 //ПОДОКОННИК и ОТЛИВ за м
-	 podokonnik = <?php echo $podokonnik; ?>;
+	 podokonnik = 20;
 	 
 	 //МОНТАЖНЫЕ РАБОТЫ за м2 
-	 montazhrab = <?php echo $montazhrab; ?>;
+	 montazhrab = 44;
 	 
 	 //КОЭФФИЦИЕНТ К СТОИМОСТИ ОКОН
-	 koeffits = <?php echo $koeffits; ?>; 
+	 koeffits = 1; 
 	 
 	 //ВАША ЭКОНОМИЯ
-	 vashaeconomiya = <?php echo $vashaeconomiya; ?>; // 0.4 - это 40%
+	 vashaeconomiya = 0.4; // 0.4 - это 40%
 	 
 	 //РАССРОЧКА. количество месяцев 
-	 rassrochkames = <?php echo $rassrochkames; ?>; 
+	 rassrochkames = 5; 
 	
 	 
-</script><script type="text/javascript">
+</script>
+              
+             
+              
+              <script type="text/javascript">
 jQuery(document).ready(function(){
 	
  $(".tipokna1").hover(function () {
@@ -588,7 +590,7 @@ jQuery("input#Costhor").val(jQuery("#sliderhor").slider("values",0));
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -605,8 +607,8 @@ jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0));
 		});
 		
 		
-		$('#Costhor').val(minsliderhor);
-		$('#Costver').val(110);
+		$('#Costhor').val(minsliderhor+40);
+		$('#Costver').val(140);
 		
 		
  		
@@ -623,15 +625,15 @@ function change_price()
 {
 	
 	
-	if (tipokna == 41) {costfin = $('#Costhor').val() * $('#Costver').val() * stoim1 / 10000;}
+	if (tipokna == 41) {costfin = $('#Costhor').val() * $('#Costver').val() * stoim1 / 12300;}
 	if (tipokna == 42) {costfin = $('#Costhor').val() * $('#Costver').val() * stoim1 / 10000;}
 	if (tipokna == 11) {costfin = $('#Costhor').val() * $('#Costver').val() * stoim1 / 10000;}
 	if (tipokna == 12) {costfin = $('#Costhor').val() * $('#Costver').val() * stoim1 / 10000;}
 	
-	if (tipokna == 13) {costfin = $('#Costhor').val() * $('#Costver').val() * stoim1 / 10000;}
+	if (tipokna == 13) {costfin = $('#Costhor').val() * $('#Costver').val() * stoim1 / 11050;}
 	
 	
-	if (tipokna == 21) {costfin = $('#Costhor').val() * $('#Costver').val()* 0.5 * stoim1 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.5 * stoim2 / 13200;}
+	if (tipokna == 21) {costfin = $('#Costhor').val() * $('#Costver').val()* 0.5 * stoim1 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.5 * stoim2 / 10000;}
 	
 	if (tipokna == 22) {costfin = $('#Costhor').val() * $('#Costver').val()* 0.5 * stoim1 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.5 * stoim2 / 10000;}
 	
@@ -639,11 +641,11 @@ function change_price()
 	
 	if (tipokna == 24) {costfin = $('#Costhor').val() * $('#Costver').val()* 0.5 * stoim1 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.5 * stoim2 / 10000;}
 	
-	if (tipokna == 31) {costfin = $('#Costhor').val() * $('#Costver').val()* 0.333333 * stoim1 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim2 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim3 / 19100;}
+	if (tipokna == 31) {costfin = $('#Costhor').val() * $('#Costver').val()* 0.333333 * stoim1 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim2 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim3 / 9600;}
 	
 	if (tipokna == 32) {costfin = $('#Costhor').val() * $('#Costver').val()* 0.333333 * stoim1 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim2 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim3 / 13800;}
 	
-	if (tipokna == 33) {costfin = $('#Costhor').val() * $('#Costver').val()* 0.333333 * stoim1 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim2 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim3 / 13600;}
+	if (tipokna == 33) {costfin = $('#Costhor').val() * $('#Costver').val()* 0.333333 * stoim1 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim2 / 10000 + $('#Costhor').val() * $('#Costver').val() * 0.333333 * stoim3 / 8700;}
 	
 				 
 		 costfin= costfin *koeffits*skidka;
@@ -690,8 +692,8 @@ $(".ok4_1").click(function () {
 		maxsliderhor = shir_dver_max;
 		minsliderver = vysota_dver_min;
 		maxsliderver = vysota_dver_max;
-		$('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
-		$('#Costver').val(minsliderver);
+		$('#Costhor').val(80); // подставляем значения максимума и минимума на слайдер
+		$('#Costver').val(210);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -800,12 +802,12 @@ $(".ok4_2").click(function () {
 //ПВХ ОКНО ГЛУХОЕ
 $(".ok1_1").click(function () {
 		tipokna = 11; //задаем тип окна
-		minsliderhor = shir_oknogluh_min;
+		minsliderhor = shir_oknogluh_min*2;
 		maxsliderhor = shir_oknogluh_max;
 		minsliderver = vysota_oknogluh_min;
 		maxsliderver = vysota_oknogluh_max;
 		$('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
-		$('#Costver').val(110);
+		$('#Costver').val(120);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -829,7 +831,7 @@ $(".ok1_1").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,120],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -856,12 +858,12 @@ $(".ok1_1").click(function () {
 //ПВХ ОКНО ПОВОРОТНОЕ
 $(".ok1_2").click(function () {
 		tipokna = 12; //задаем тип окна
-		minsliderhor = shir_oknopovorot_min;
+		minsliderhor = shir_oknogluh_min*2;
 		maxsliderhor = shir_oknopovorot_max;
 		minsliderver = vysota_oknopovorot_min;
 		maxsliderver = vysota_oknopovorot_max;
 		$('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
-		$('#Costver').val(110);
+		$('#Costver').val(120);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -885,7 +887,7 @@ $(".ok1_2").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,120],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -912,12 +914,12 @@ $(".ok1_2").click(function () {
 //ПВХ ОКНО ПОВОРОТНО – ОТКИДНОЕ
 $(".ok1_3").click(function () {
 		tipokna = 13; //задаем тип окна
-		minsliderhor = shir_oknopovorototkid_min;
+		minsliderhor = shir_oknopovorototkid_min*2;
 		maxsliderhor = shir_oknopovorototkid_max;
 		minsliderver = vysota_oknopovorototkid_min;
 		maxsliderver = vysota_oknopovorototkid_max;
 		$('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
-		$('#Costver').val(110);
+		$('#Costver').val(120);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -941,7 +943,7 @@ $(".ok1_3").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,120],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -968,12 +970,12 @@ $(".ok1_3").click(function () {
 //ПВХ ОКНО Глухое и ПОВОРОТНОЕ 
 $(".ok2_1").click(function () {
 		tipokna = 21; //задаем тип окна
-		minsliderhor = shir_oknogluh_min*2;
+		minsliderhor = shir_oknogluh_min*2+40;
 		maxsliderhor = shir_oknopovorot_max*2;
 		minsliderver = vysota_oknogluh_min;
 		maxsliderver = vysota_oknogluh_max;
 		$('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
-		$('#Costver').val(110);
+		$('#Costver').val(140);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -997,7 +999,7 @@ $(".ok2_1").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -1026,12 +1028,12 @@ $(".ok2_1").click(function () {
 //ПВХ ОКНО Глухое и ПОВОРОТНО – ОТКИДНОЕ 
 $(".ok2_2").click(function () {
 		tipokna = 22; //задаем тип окна
-		minsliderhor = shir_oknogluh_min*2;
+		minsliderhor = shir_oknogluh_min*2+40;
 		maxsliderhor = shir_oknopovorototkid_max*2;
 		minsliderver = vysota_oknogluh_min;
 		maxsliderver = vysota_oknogluh_max;
 		$('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
-		$('#Costver').val(110);
+		$('#Costver').val(140);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -1055,7 +1057,7 @@ $(".ok2_2").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -1084,12 +1086,12 @@ $(".ok2_2").click(function () {
 //ПВХ ОКНО Поворотное и ПОВОРОТНОЕ – ПОВОРОТНОЕ
 $(".ok2_3").click(function () {
 		tipokna = 23; //задаем тип окна
-		minsliderhor = shir_oknopovorot_min*2;
+		minsliderhor = shir_oknopovorot_min*2+40;
 		maxsliderhor = shir_oknopovorot_max*2;
 		minsliderver = vysota_oknopovorot_min;
 		maxsliderver = vysota_oknopovorot_max;
 		$('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
-		$('#Costver').val(110);
+		$('#Costver').val(140);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -1113,7 +1115,7 @@ $(".ok2_3").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -1142,12 +1144,12 @@ $(".ok2_3").click(function () {
 //ПВХ ОКНО Поворотное и ПОВОРОТНО – ОТКИДНОЕ 
 $(".ok2_4").click(function () {
 		tipokna = 24; //задаем тип окна
-		minsliderhor = shir_oknopovorototkid_min*2;
+		minsliderhor = shir_oknopovorototkid_min*2+40;
 		maxsliderhor = shir_oknopovorototkid_max*2;
 		minsliderver = vysota_oknopovorot_min;
 		maxsliderver = vysota_oknopovorot_max;
 		$('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
-		$('#Costver').val(110);
+		$('#Costver').val(140);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -1171,7 +1173,7 @@ $(".ok2_4").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -1204,7 +1206,7 @@ $(".ok2_4").click(function () {
 //ПВХ ОКНО Глухое и ПОВОРОТНОЕ  и глухое
 $(".ok3_1").click(function () {
 		tipokna = 31; //задаем тип окна
-		minsliderhor = shir_oknopovorot_min*3;
+		minsliderhor = shir_oknopovorot_min*4+10;
 		maxsliderhor = shir_oknopovorot_max*3;
 		
 		if (maxsliderhor > 300) {maxsliderhor = 300;}
@@ -1213,7 +1215,7 @@ $(".ok3_1").click(function () {
 		minsliderver = vysota_oknopovorot_min;
 		maxsliderver = vysota_oknogluh_max;
 		$('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
-		$('#Costver').val(110);
+		$('#Costver').val(140);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -1237,7 +1239,7 @@ $(".ok3_1").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -1265,7 +1267,7 @@ $(".ok3_1").click(function () {
 //ПВХ ОКНО Глухое и ПОВОРОТНОЕ  и ПОВОРОТНОЕ
 $(".ok3_2").click(function () {
 		tipokna = 32; //задаем тип окна
-		minsliderhor = shir_oknopovorot_min*3;
+		minsliderhor = shir_oknopovorot_min*4+10;
 		maxsliderhor = shir_oknopovorot_max*3;
 		
 		if (maxsliderhor > 300) {maxsliderhor = 300;}
@@ -1274,7 +1276,7 @@ $(".ok3_2").click(function () {
 		minsliderver = vysota_oknopovorot_min;
 		maxsliderver = vysota_oknogluh_max;
 		$('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
-		$('#Costver').val(110);
+		$('#Costver').val(140);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -1298,7 +1300,7 @@ $(".ok3_2").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -1327,7 +1329,7 @@ $(".ok3_2").click(function () {
 //ПВХ ОКНО ПОВОРОТНОЕ и Глухое и ПОВОРОТНО – ОТКИДНОЕ
 $(".ok3_3").click(function () {
 		tipokna = 33; //задаем тип окна
-		minsliderhor = shir_oknopovorototkid_min*3;
+		minsliderhor = shir_oknopovorototkid_min*4+10;
 		maxsliderhor = shir_oknopovorototkid_max*3;
 		
 		if (maxsliderhor > 300) {maxsliderhor = 300;}
@@ -1336,7 +1338,7 @@ $(".ok3_3").click(function () {
 		minsliderver = vysota_oknopovorototkid_min;
 		maxsliderver = vysota_oknogluh_max;
 		$('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
-		$('#Costver').val(110);
+		$('#Costver').val(140);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -1360,7 +1362,7 @@ $(".ok3_3").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));

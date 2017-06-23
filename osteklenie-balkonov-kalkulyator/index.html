@@ -323,8 +323,8 @@ jQuery(document).ready(function(){
 jQuery(document).ready(function(){
 		 
 	
-		$('#Costhor').val(minsliderhor);
-		$('#Costver').val("110");
+		$('#Costhor').val(minsliderhor+40);
+		$('#Costver').val("140");
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -348,7 +348,7 @@ jQuery(document).ready(function(){
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -380,7 +380,7 @@ if (tipbalk == 1)
 */
 	
 		
-		costfin = $('#Costhor').val() * $('#Costver').val() * stoim  / 10000;
+		costfin = $('#Costhor').val() * $('#Costver').val() * stoim  / 11030;
 		shirinafin= parseInt($('#Costhor').val());
 		 
 		costfin= costfin *koeffits*skidka;
@@ -433,8 +433,8 @@ $(".tipbalk1").click(function () {
 		minsliderver = vysota_balk_min;
 		maxsliderver = vysota_balk_max;
 		
-		$('#Costhor').val(minsliderhor); // подставляем значения максимума и минимума на слайдер
-		$('#Costver').val(110);
+		$('#Costhor').val(minsliderhor+140); // подставляем значения максимума и минимума на слайдер
+		$('#Costver').val(140);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -460,7 +460,7 @@ $(".tipbalk1").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -474,7 +474,7 @@ $(".tipbalk1").click(function () {
 			}
 		});
 		
-		stoim = stoim_balk; // присваиваем стоимость из прайса
+		stoim = 117; // присваиваем стоимость из прайса
 		
 		change_price();
 		
@@ -526,7 +526,7 @@ $(".tipbalk2").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -593,7 +593,7 @@ $(".tipbalk3").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -633,7 +633,7 @@ $(".tipbalk4").click(function () {
 		
 		
 		
-		$('#Costver').val(110);
+		$('#Costver').val(140);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -662,7 +662,7 @@ $(".tipbalk4").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -702,7 +702,7 @@ $(".tipbalk5").click(function () {
 		
 		
 		
-		$('#Costver').val(110);
+		$('#Costver').val(140);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -731,7 +731,7 @@ $(".tipbalk5").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -769,7 +769,7 @@ $(".tipbalk6").click(function () {
 		
 		
 		
-		$('#Costver').val(110);
+		$('#Costver').val(140);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -798,7 +798,7 @@ $(".tipbalk6").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
@@ -839,7 +839,7 @@ $(".tipbalk7").click(function () {
 		
 		
 		
-		$('#Costver').val(110);
+		$('#Costver').val(140);
 		
 		jQuery("#sliderhor").slider({
 			animate:true,
@@ -867,7 +867,7 @@ $(".tipbalk7").click(function () {
 			animate:true,
 			min: minsliderver,
 			max: maxsliderver,
-			values: [0,110],
+			values: [0,140],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#Costver").val(jQuery("#sliderver").slider("values",0,minsliderver));
